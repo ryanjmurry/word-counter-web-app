@@ -5,14 +5,18 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using WordCounter.Models;
 
-// For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-
 namespace WordCounter.Controllers
 {
     public class RepeatCountersController : Controller
     {
-        // GET: /<controller>/
+        [HttpGet("/repeatcounters")]
         public ActionResult Index()
+        {
+            return View();
+        }
+
+        [HttpGet("/repeatcounters/new")]
+        public ActionResult Search()
         {
             return View();
         }
