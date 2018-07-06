@@ -4,14 +4,20 @@
 }
 
 <h1>search #@Model.GetId()</h1>
-<div class="details">
-    <h3>word: @Model.GetTargetWord()</h3>
-    <h3>search phrase: @Model.GetSearchPhrase()</h3> 
-    <h3>total matches: @Model.GetMatches()</h3>
-</div>
+
+<h3>target word</h3>
+<h4 class="result-subheader">@Model.GetTargetWord()</h4>
+<br />
+
+<h3>search phrase</h3>
+<h4 class="res3lt-subheader">@Model.GetSearchPhrase()</h4>
+<br />
+
+<h3>matches</h3>
+<h4 class="result-subheader">@Model.GetMatches()</h4>
 
 <div class="nav-buttons">
-    <a href="/repeatcounters"><button class="btn btn-default">home</button></a>
-    <a href="/repeatcounters/history"><button class="btn btn-success">history</button></a>
-    <a href="/repeatcounters/new"><button class="btn btn-warning">search</button></a>
+    <a href="/repeatcounters"><button class="btn btn-default btn-lg">home</button></a>
+    <a href="/repeatcounters/history"><button class="btn btn-success btn-lg">history</button></a>
+    <a href="/repeatcounters/new"><button class="btn btn-warning btn-lg">search</button></a>
 </div>

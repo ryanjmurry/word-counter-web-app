@@ -17,6 +17,7 @@ namespace WordCounter.Models
         private int _matches = 0;
         private static List<RepeatCounter> _history = new List<RepeatCounter>() { };
         private int _id;
+        private static int _historyCount;
 
         //object constructor
         public RepeatCounter(string targetWord = "", string searchPhrase = "")
@@ -26,11 +27,17 @@ namespace WordCounter.Models
             SetSearchList();
             _history.Add(this);
             _id = _history.Count;
+            _historyCount = _history.Count;
         }
 
         public static List<RepeatCounter> GetHistory()
         {
             return _history;
+        }
+
+        public static int GetHistoryCount()
+        {
+            return _historyCount;
         }
 
         public int GetId()

@@ -4,22 +4,24 @@
 }
 
 <h1>search</h1>
+<div class="search-form">
+    <form action='/repeatcounters/results' method="post">
+        <div class='form-group'>
+            <label for='target-word'></label>
+            <input id='target-word' name='target-word' class='form-control input-lg' type='text' placeholder="enter target word" required>
+        </div>
+        <div class='form-group'>
+            <label for='search-phrase'></label>
+            <input id='search-phrase' name='search-phrase' class='form-control input-lg' type='text' placeholder="enter search phrase" required>
+        </div>
+        <button type='submit' class='btn btn-danger btn-lg'>crunch matches</button>
+    </form>
+</div>
 
-<form action='/repeatcounters/results' method="post">
-    <div class='form-group'>
-        <label for='target-word'></label>
-        <input id='target-word' name='target-word' class='form-control' type='text' placeholder="enter target word" required>
-    </div>
-    <div class='form-group'>
-        <label for='search-phrase'></label>
-        <input id='search-phrase' name='search-phrase' class='form-control' type='text' placeholder="enter search phrase"required>
-    </div>
-    <button type='submit' class='btn btn-danger'>crunch matches</button>
-</form>
 <br />
 
 <div class="nav-buttons">
-    <a href="/repeatcounters"><button class="btn btn-default">home</button></a>
-    <a href="/repeatcounters/history"><button class="btn btn-success">history</button></a>
+    <a href="/repeatcounters"><button class="btn btn-default btn-lg">home</button></a>
+    <a href="/repeatcounters/history"><button class="btn btn-info btn-lg">history</button></a>
 </div>
 

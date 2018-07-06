@@ -1,5 +1,5 @@
 ﻿#splash-background {
-    background-image: url("../images/splash-background.jpg");
+    background-image: url("../images/splash-bg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     text-align: center;
@@ -32,22 +32,62 @@
 }
 
 h1 {
-    text-align: center;
-    font-size: 6vw;
+    margin: auto;
+    font-size: 80px;
     color: #00bc8c;
-    text-decoration-line: underline;
+    border-bottom: 5px solid #00bc8c;
+    display: table;
+    padding: 10px;
 }
 
 h2 {
     text-align: center;
-    font-size: 2vw;
+    font-size: 40px;
     font-style: oblique;
 
 }
 
-.results {
+.clear-all {
+    float: left;
+}
+
+h3 {
+    text-align: center;
+    text-decoration-line: underline;
+    font-size: 40px;
+}
+
+h4 {
+    text-align: center;
+    color: #3498db;
+    font-size: 30px;
+}
+
+h5 {
+    text-align: center;
+    color: #f39c12;
+    font-size: 30px;
+}
+
+h6 {
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    font-style: italic;
+}
+
+.results  {
     text-align: center;
 }
+
+.results .highlight {
+    color: #3498db;
+}
+
+.results .search-highlight {
+    color: #f39c12;
+}
+
 
 .nav-buttons {
     text-align: right;
@@ -56,23 +96,12 @@ h2 {
 .home-buttons-left {
     text-align: left;
     display: inline-block;
-
 }
-
-.home-buttons-left .btn {
-    font-size: 40px;
-}
-
 
 .home-buttons-right {
     float: right;
     display: inline-block;
 }
-
-.home-buttons-right .btn {
-    font-size: 40px;
-}
-
 
 /* unvisited link */
 a:link {
