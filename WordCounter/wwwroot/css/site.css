@@ -7,7 +7,7 @@
 
 #splash-background .splash-div {
     position: fixed;
-    top: 50%;
+    top: 40%;
     left: 50%;
     /* bring your own prefixes */
     transform: translate(-50%, -50%);
@@ -33,6 +33,16 @@
 
 h1 {
     text-align: center;
+    font-size: 6vw;
+    color: #00bc8c;
+    text-decoration-line: underline;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2vw;
+    font-style: oblique;
+
 }
 
 .results {
@@ -42,6 +52,27 @@ h1 {
 .nav-buttons {
     text-align: right;
 }
+
+.home-buttons-left {
+    text-align: left;
+    display: inline-block;
+
+}
+
+.home-buttons-left .btn {
+    font-size: 40px;
+}
+
+
+.home-buttons-right {
+    float: right;
+    display: inline-block;
+}
+
+.home-buttons-right .btn {
+    font-size: 40px;
+}
+
 
 /* unvisited link */
 a:link {
