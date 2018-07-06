@@ -28,6 +28,33 @@ namespace WordCounter.Models
             _id = _history.Count;
         }
 
+        public static List<RepeatCounter> GetHistory()
+        {
+            return _history;
+        }
+
+        public int GetId()
+        {
+            return _id;
+        }
+
+        public void ClearHistory()
+        {
+            _history.Clear();
+        }
+
+        public static void ClearOne(int id)
+        {
+            _history.RemoveAt(id - 1);
+            foreach (RepeatCounter search in _history)
+            {
+                if (search._id > id)
+                {
+                    search._id--;
+                }
+            }
+        }
+
         public string GetTargetWord()
         {
             return _targetWord;
