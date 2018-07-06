@@ -1,6 +1,6 @@
 # Word Counter
 
-#### Epicodus C# Code Review 1, 06.29.2018
+#### Epicodus C# Code Review 2, 07.06.2018
 
 #### By Ryan Murry
 
@@ -52,7 +52,7 @@ A program that checks how frequently a word appears in a given string.
 
 ## Links
 
-* [Link to Repository](https://github.com/ryanjmurry/WordCounter.Solution)
+* [Link to Repository](https://github.com/ryanjmurry/word-counter-web-app)
 
 ## License
 
