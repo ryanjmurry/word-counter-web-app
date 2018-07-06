@@ -273,7 +273,8 @@ namespace WordCounter.Tests
             RepeatCounter newRepeatCounter = new RepeatCounter("can", "i can swim");
 
             //Act
-            int result = newRepeatCounter.Matches();
+            newRepeatCounter.SetMatches();
+            int result = newRepeatCounter.GetMatches();
 
             //Assert
             Assert.AreEqual(1, result);
@@ -286,7 +287,8 @@ namespace WordCounter.Tests
             RepeatCounter newRepeatCounter = new RepeatCounter("can", "I CAN SWIM");
 
             //Act
-            int result = newRepeatCounter.Matches();
+            newRepeatCounter.SetMatches();
+            int result = newRepeatCounter.GetMatches();
 
             //Assert
             Assert.AreEqual(1, result);
@@ -299,7 +301,8 @@ namespace WordCounter.Tests
             RepeatCounter newRepeatCounter = new RepeatCounter("can", "I 'can' swim! Can you?");
 
             //Act
-            int result = newRepeatCounter.Matches();
+            newRepeatCounter.SetMatches();
+            int result = newRepeatCounter.GetMatches();
 
             //Assert
             Assert.AreEqual(2, result);
@@ -312,7 +315,8 @@ namespace WordCounter.Tests
             RepeatCounter newRepeatCounter = new RepeatCounter("in-line", "I like to in-line rollerskate.");
 
             //Act
-            int result = newRepeatCounter.Matches();
+            newRepeatCounter.SetMatches();
+            int result = newRepeatCounter.GetMatches();
 
             //Assert
             Assert.AreEqual(1, result);
@@ -325,7 +329,8 @@ namespace WordCounter.Tests
             RepeatCounter newRepeatCounter = new RepeatCounter("don't", "Don't go there!");
 
             //Act
-            int result = newRepeatCounter.Matches();
+            newRepeatCounter.SetMatches();
+            int result = newRepeatCounter.GetMatches();
 
             //Assert
             Assert.AreEqual(1, result);
