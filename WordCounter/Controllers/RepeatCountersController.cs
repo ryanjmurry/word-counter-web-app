@@ -34,5 +34,12 @@ namespace WordCounter.Controllers
             RepeatCounter newRepeatCounter = new RepeatCounter(Request.Form["target-word"], Request.Form["search-phrase"]);
             return RedirectToAction("Index");
         }
+
+        [HttpGet("/repeatcounters/{id}")]
+        public ActionResult Details(int id)
+        {
+            RepeatCounter current = RepeatCounter.Find(id);
+            return View(current);
+        }
     }
 }

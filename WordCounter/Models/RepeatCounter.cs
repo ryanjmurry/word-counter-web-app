@@ -38,6 +38,11 @@ namespace WordCounter.Models
             return _id;
         }
 
+        public static RepeatCounter Find(int id)
+        {
+            return _history[id - 1];
+        }
+
         public void ClearHistory()
         {
             _history.Clear();
