@@ -35,6 +35,14 @@ h1 {
     text-align: center;
 }
 
+.results {
+    text-align: center;
+}
+
+.nav-buttons {
+    text-align: right;
+}
+
 /* unvisited link */
 a:link {
     color: white;

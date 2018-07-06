@@ -4,9 +4,20 @@
 }
 
 <h1>word counter</h1>
-<h3>word counter is a simple web application that determines the number of times a target word appears in a search phrase</h3>
+<h3>an app that determines the number of times a target word appears in a search phrase</h3>
 
-<a href="/repeatcounters/new"><button class="btn btn-warning">search</button></a>
-<a href="/repeatcounters/history"><button class="btn btn-success">history</button></a>
+<div class="results">
+    @foreach (var search in Model)
+    {
+        <h4><a href="/repeatcounters/@search.GetId()">Search #@search.GetId() | target word: @search.GetTargetWord()</a></h4>
+    }
+</div>
+
+
+<div class="nav-buttons">
+    <a href="/repeatcounters/new"><button class="btn btn-warning">search</button></a>
+    <a href="/repeatcounters/history"><button class="btn btn-success">history</button></a>
+</div>
+
 
 

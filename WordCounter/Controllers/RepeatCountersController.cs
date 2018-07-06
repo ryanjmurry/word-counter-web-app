@@ -12,7 +12,8 @@ namespace WordCounter.Controllers
         [HttpGet("/repeatcounters")]
         public ActionResult Index()
         {
-            return View();
+            List<RepeatCounter> history = RepeatCounter.GetHistory();
+            return View(history);
         }
 
         [HttpGet("/repeatcounters/new")]
@@ -25,6 +26,13 @@ namespace WordCounter.Controllers
         public ActionResult History()
         {
             return View();
+        }
+
+        [HttpPost("/repeatcounters")]
+        public ActionResult Create()
+        {
+            RepeatCounter newRepeatCounter = new RepeatCounter(Request.Form["target-word"], Request.Form["search-phrase"]);
+            return RedirectToAction("Index");
         }
     }
 }
