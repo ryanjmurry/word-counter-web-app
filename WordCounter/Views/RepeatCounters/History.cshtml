@@ -8,6 +8,9 @@
     @foreach (var search in Model)
     {
     <h4><a href="/repeatcounters/@search.GetId()">search #@search.GetId() | target word: @search.GetTargetWord()</a></h4>
+    <form action="/repeatcounters/@search.GetId()" method="post">
+        <button type="submit" name="clear-one" class="btn btn-danger">delete search</button>
+    </form>
     }
 </div>
 
@@ -17,5 +20,5 @@
 </div>
 
 <form action='/repeatcounters' method="post">
-    <button type="submit" name="button">Clear All Items</button>
+    <button type="submit" name="clear-all" class="btn btn-danger">clear all items</button>
 </form>

@@ -57,6 +57,10 @@ namespace WordCounter.Models
                 {
                     search._id--;
                 }
+                else
+                {
+                    
+                }
             }
         }
 

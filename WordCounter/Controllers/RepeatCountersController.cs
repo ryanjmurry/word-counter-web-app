@@ -50,5 +50,12 @@ namespace WordCounter.Controllers
             RepeatCounter.ClearHistory();
             return RedirectToAction("Index");
         }
+
+        [HttpPost("/repeatcounters/{id}")]
+        public ActionResult ClearSearch(int id)
+        {
+            RepeatCounter.ClearOne(id);
+            return RedirectToAction("History");
+        }
     }
 }
