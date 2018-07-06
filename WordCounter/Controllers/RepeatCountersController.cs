@@ -12,8 +12,7 @@ namespace WordCounter.Controllers
         [HttpGet("/repeatcounters")]
         public ActionResult Index()
         {
-            List<RepeatCounter> history = RepeatCounter.GetHistory();
-            return View(history);
+            return View();
         }
 
         [HttpGet("/repeatcounters/new")]
