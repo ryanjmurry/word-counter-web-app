@@ -3,9 +3,19 @@
     ViewData["Title"] = "History";
 }
 <h1>history</h1>
-<h3>a list of previous searches</h3>
+
+<div class="results">
+    @foreach (var search in Model)
+    {
+    <h4><a href="/repeatcounters/@search.GetId()">search #@search.GetId() | target word: @search.GetTargetWord()</a></h4>
+    }
+</div>
 
 <div class="nav-buttons">
     <a href="/repeatcounters"><button class="btn btn-default">home</button></a>
     <a href="/repeatcounters/new"><button class="btn btn-warning">search</button></a>
 </div>
+
+<form action='/repeatcounters' method="post">
+    <button type="submit" name="button">Clear All Items</button>
+</form>

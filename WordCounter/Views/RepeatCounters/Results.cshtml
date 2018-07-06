@@ -1,0 +1,23 @@
+﻿@{
+    Layout = "_Layout";
+    ViewData["Title"] = "Search";
+}
+
+<h1>results</h1>
+
+<h2 class="result-header">target word</h2>
+<h4 class="result-subheader">@Model.GetTargetWord()</h4>
+<br />
+
+<h2 class="result-header">search phrase</h2>
+<h4 class="result-subheader">@Model.GetSearchPhrase()</h4>
+<br />
+
+<h2 class="result-header">matches</h2>
+<h4 class="result-subheader">@Model.GetMatches()</h4>
+
+<div class="nav-buttons">
+    <a href="/repeatcounters"><button class="btn btn-default">home</button></a>
+    <a href="/repeatcounters/history"><button class="btn btn-success">history</button></a>
+    <a href="/repeatcounters/new"><button class="btn btn-warning">search</button></a>
+</div>

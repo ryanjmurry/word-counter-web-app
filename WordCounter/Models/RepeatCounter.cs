@@ -43,7 +43,7 @@ namespace WordCounter.Models
             return _history[id - 1];
         }
 
-        public void ClearHistory()
+        public static void ClearHistory()
         {
             _history.Clear();
         }
@@ -209,7 +209,7 @@ namespace WordCounter.Models
             }
         }
 
-        public int Matches()
+        public int GetMatches()
         {
             return _matches;
         }
