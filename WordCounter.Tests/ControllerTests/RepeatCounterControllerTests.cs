@@ -63,33 +63,5 @@ namespace WordCounter.Tests
             //Assert
             Assert.IsInstanceOfType(result, typeof(List<RepeatCounter>));
         }
-
-        [TestMethod]
-        public void Details_ReturnsCorrectView_True()
-        {
-            //Arrange
-            RepeatCountersController controller = new RepeatCountersController();
-
-            //Act
-            ActionResult indexView = controller.Details();
-
-            //Assert
-            Assert.IsInstanceOfType(indexView, typeof(ViewResult));
-        }
-
-        [TestMethod]
-        public void Index_HasCorrectModelType_ItemList()
-        {
-            //Arrange
-            RepeatCountersController controller = new RepeatCountersController();
-            IActionResult actionResult = controller.Index();
-            ViewResult indexView = controller.Index() as ViewResult;
-
-            //Act
-            var result = indexView.ViewData.Model;
-
-            //Assert
-            Assert.IsInstanceOfType(result, typeof(List<RepeatCounter>));
-        }
     }
 }
