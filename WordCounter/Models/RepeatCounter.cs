@@ -211,7 +211,6 @@ namespace WordCounter.Models
 
         public int Matches()
         {
-            SetMatches();
             return _matches;
         }
     }
