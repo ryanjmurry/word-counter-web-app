@@ -31,6 +31,36 @@
     text-decoration-color: white;
 }
 
+h1 {
+    text-align: center;
+}
+
+/* unvisited link */
+a:link {
+    color: white;
+}
+
+/* visited link */
+a:visited {
+    color: white;
+}
+
+/* mouse over link */
+a:hover {
+    color: white;
+}
+
+/* selected link */
+a:active {
+    color: white;
+}
+
+h3 {
+    text-align: center;
+    font-style: italic;
+    color: white;
+}
+
 body {
     padding-top: 50px;
     padding-bottom: 20px;

@@ -20,5 +20,11 @@ namespace WordCounter.Controllers
         {
             return View();
         }
+
+        [HttpGet("/repeatcounters/history")]
+        public ActionResult History()
+        {
+            return View();
+        }
     }
 }
