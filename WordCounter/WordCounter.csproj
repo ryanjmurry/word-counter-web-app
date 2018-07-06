@@ -20,4 +20,14 @@
   <ItemGroup>
     <Folder Include="Models\" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Remove="wwwroot\lib\bootstrap\dist\css\bootstrap-superhero.css" />
+    <Content Remove="wwwroot\lib\bootstrap\dist\css\bootstrap-united.css" />
+    <Content Remove="wwwroot\images\splash-background.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="wwwroot\lib\bootstrap\dist\css\bootstrap-superhero.css" />
+    <None Include="wwwroot\lib\bootstrap\dist\css\bootstrap-united.css" />
+    <None Include="wwwroot\images\splash-background.jpg" />
+  </ItemGroup>
 </Project>
