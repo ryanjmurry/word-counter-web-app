@@ -23,21 +23,14 @@ A program that checks how frequently a word appears in a given string.
 | Compare **target word** to each **clean word** in the **search list** | **target word** = can </br> **search list** {i, can, swim} | can vs. i = **false** </br> can vs. can = **true** </br> can vs. swim = **false** | a lowercase **target word** with no punctuation compared to a list of lowercase words containing no punctuation whatsoever |
 | Return number of matching words | **target word** = can </br> **search list** {i, can, swim} | 1 | single match, no punctuation, all lowercase |
 
-## Known Bugs
-
-### On master Branch
-* Not able to handle edge case scenarios, such as when a word is wrapped in parentheses or if the word is followed by a period or comma
-
-### On cleaner-attempt Branch
-* No known bugs at this time. Waiting to merge cleaner-attempt to master until after project's code review.
-
-
 ## Setup on OSX
 
 * Download and install .Net Core 1.1.4
 * Download and install Mono
-* Clone cleaner-attempt repo
+* Clone repo
 * Run `dotnet restore` from within the project directory
+* Run `dotnet build` from within the project directory
+* Run `dotnet run` from within the project directory
 
 ## Contribution Requirements
 
